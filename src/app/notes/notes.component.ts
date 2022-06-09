@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../services/user.service';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-notes',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NotesComponent implements OnInit {
 
-  constructor() { }
+  constructor( private userService: UserService, private router: Router) { }
 
   ngOnInit(): void {
+  }
+  salir(){
+    console.log("quiero salir")
+    this.userService.salir()
+    this.router.navigate([""])
   }
 
 }

@@ -2,6 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.5.
 
+## Instalaciones para autentificacion
+> * npm i firebase
+> * npm i @angular/fire
+> * npm i @firebase/auth
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

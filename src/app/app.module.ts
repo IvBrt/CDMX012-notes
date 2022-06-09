@@ -8,6 +8,8 @@ import { AccountComponent } from './account/account.component';
 import { NotesComponent } from './notes/notes.component';
 import { NotFoundComponent } from './notFound/notFound.component';
 import { GoogleComponent } from './google/google.component';
+import { AngularFireModule} from '@angular/fire/compat';
+import { environment } from 'src/environments/environment';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,10 @@ import { GoogleComponent } from './google/google.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(
+    environment.firebaseConfig
+    )
   ],
   providers: [],
   bootstrap: [AppComponent]
