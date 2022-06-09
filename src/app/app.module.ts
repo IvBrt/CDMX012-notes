@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { MyNotesComponent } from './my-notes/my-notes.component';
 import { AccountComponent } from './account/account.component';
 import { NotesComponent } from './notes/notes.component';
-import { ErrorComponent } from './error/error.component';
+import { NotFoundComponent } from './notFound/notFound.component';
+import { GoogleComponent } from './google/google.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ErrorComponent } from './error/error.component';
     MyNotesComponent,
     AccountComponent,
     NotesComponent,
-    ErrorComponent
+    NotFoundComponent,
+    GoogleComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,9 @@
-body{
+.container{
     background: #B1E693;
 }
 
 h1{
-    color: #ffffff;
+    color: white;
 }
 
-.account{
-    background: #FF9999;
-    width: 450px;
-    color: #ffffff;
-}
+
